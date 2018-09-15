@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Artist } from '../artist';
+import { ARTISTS } from '../mock-artists';
 
 @Component({
   selector: 'app-artists',
@@ -9,10 +10,12 @@ import { Artist } from '../artist';
 
 export class ArtistsComponent implements OnInit {
 
-  artist: Artist = {
-    id: 1,
-    name: 'Proud Peasant'
-  };
+  // artist: Artist = {
+  //   id: 1,
+  //   name: 'Proud Peasant'
+  // };
+
+  artists = ARTISTS;
 
   constructor() { }
 
